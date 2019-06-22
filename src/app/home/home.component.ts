@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  navList: string[] = [
+    'Work',
+    'Projects',
+    'Contact'
+  ]
+
   constructor() { }
 
   ngOnInit() {
