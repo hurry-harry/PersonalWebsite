@@ -3,20 +3,25 @@
     <h1 class="about">
       Hi! Welcome to my website!
       <br>
-      I'm Harry Francisco, a {{currJobTitle | lowercase}} at 
-      <a class="companyLink" href="{{currCompany.link}}" target="_blank">{{currCompany.name}}</a>
+      I'm Harry Francisco, a {{currJobTitle | lowercase}} at
+      <a class="company-link" href="{{currCompany.link}}" target="_blank">{{currCompany.name}}</a>
       in {{currLocation.city}}, {{currLocation.countryISO}}.
     </h1>
   </div>
-  <div id="aboutDetails" class="container container--vertical">
-    <div class="aboutDetails">
-      <h3 class="aboutDetailsLabel">Tech Stack</h3>
-      <div id="aboutDetailsContentTechStack" class="aboutDetailsContent" (click)="toggleAboutDetailsContent()">
-        hi hello
+  <div class="container container--vertical">
+    <div class="about-details-accordion">
+      <div class="about-details-accordion-item">
+        <h3 class="about-details-accordion-item-label">Tech Stack</h3>
+        <div class="about-details-accordion-item-content">
+          hi hello
+        </div>
       </div>
-    </div>
-    <div class="aboutDetails">
-      <h3 class="aboutDetailsLabel">Work Experience</h3>
+      <div class="about-details-accordion-item">
+        <h3 class="about-details-accordion-item-label">Work Experience</h3>
+        <div class="about-details-accordion-item-content">
+          hello hi
+        </div>
+      </div>
     </div>
   </div>
 </section>

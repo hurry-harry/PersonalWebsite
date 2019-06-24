@@ -50,14 +50,14 @@ a {
     align-self: flex-start;
 }
 
-.nav__navList {
+.nav__nav-list {
     flex: 1 1 0;
     text-align: right;
     margin: 0;
     padding: 0;
 }
 
-.nav__navList-item {
+.nav__nav-list-item {
     display: inline-block;
     padding: 0 40px;
     letter-spacing: 1px;
@@ -71,21 +71,21 @@ a {
     line-height: 75px;
 }
 
-.companyLink {
+.company-link {
     color: rgb(205,214,249);
     transition: color .25s ease 0s;
 }
 
-.companyLink:hover {
+.company-link:hover {
     color: inherit;
 }
 
-.aboutDetails {
+.about-details-accordion-item {
     flex: 1 1 0;
     margin-bottom: 1em;
 }
 
-.aboutDetailsLabel {
+.about-details-accordion-item-label {
     margin-bottom: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -93,7 +93,7 @@ a {
     font-weight: 300;
 }
 
-.aboutDetailsContent {
+.about-details-accordion-item-content {
     padding: 0 18px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

@@ -16,20 +16,10 @@ export class AboutComponent implements OnInit {
     'city': 'Makati City',
     'country': 'Philippines',
     'countryISO': 'PHL'
-  }
-
-  aboutDetailsMaxHeight: string;
-
+  };
+  
   constructor() { }
 
   ngOnInit() {
-    this.aboutDetailsMaxHeight = '0px';
   }
-
-  aboutDetailsContent(): void {
-    if (this.aboutDetailsMaxHeight === '0px') {
-      this.aboutDetailsMaxHeight = document.getElementById('aboutDetailsContentTechStack').clientHeight.toString() + 'px';
-    }
-  } 
-
 }
