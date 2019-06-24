@@ -9,17 +9,30 @@ export class AboutComponent implements OnInit {
 
   currJobTitle = 'Junior Developer';
   currCompany: {[key: string]: string} = {
-    'name': 'YouSource Inc',
-    'link': 'https://www.you-source.com/'
+    name: 'YouSource Inc',
+    link: 'https://www.you-source.com/'
   };
   currLocation: {[key: string]: string} = {
-    'city': 'Makati City',
-    'country': 'Philippines',
-    'countryISO': 'PHL'
+    city: 'Makati City',
+    country: 'Philippines',
+    countryISO: 'PHL'
   };
-  
+
+  isToggledTechStackAccordion: boolean;
+  isToggledWorkExpAccordion: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.isToggledTechStackAccordion = false;
+    this.isToggledWorkExpAccordion = false;
+  }
+
+  toggleTechStackAccordion(): void {
+    this.isToggledTechStackAccordion = !this.isToggledTechStackAccordion;
+  }
+
+  toggleWorkExpAccordion(): void {
+    this.isToggledWorkExpAccordion = !this.isToggledWorkExpAccordion;
   }
 }
