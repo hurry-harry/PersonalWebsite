@@ -10,15 +10,19 @@
   </div>
   <div class="container container--vertical">
     <div class="about-details-accordion">
-      <div class="about-details-accordion-item">
+      <div class="about-details-accordion-item" (click)="toggleTechStackAccordion()">
         <h3 class="about-details-accordion-item-label">Tech Stack</h3>
-        <div class="about-details-accordion-item-content">
+        <div class="about-details-accordion-item-content"
+          [ngClass]="{ 'about-details-accordion-item-content--hide': !isToggledTechStackAccordion }"
+          [ngClass]="{ 'about-details-accordion-item-content--show': isToggledTechStackAccordion }">
           hi hello
         </div>
       </div>
-      <div class="about-details-accordion-item">
+      <div class="about-details-accordion-item" (click)="toggleWorkExpAccordion()">
         <h3 class="about-details-accordion-item-label">Work Experience</h3>
-        <div class="about-details-accordion-item-content">
+        <div class="about-details-accordion-item-content"
+          [ngClass]="{ 'about-details-accordion-item-content--hide': !isToggledWorkExpAccordion }"
+          [ngClass]="{ 'about-details-accordion-item-content--show': isToggledWorkExpAccordion }">
           hello hi
         </div>
       </div>
