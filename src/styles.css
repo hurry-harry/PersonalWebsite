@@ -93,11 +93,11 @@ a {
     font-weight: 300;
 }
 
-/* .about-details-accordion-item-content {
+.about-details-accordion-item-content {
     padding: 0 18px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-} */
+}
 
 /* Pre hover */
 /* .about-details-accordion-item-content,
@@ -107,17 +107,18 @@ a {
     transition: height .25s;
 } */
 
-.about-details-accordion-item-content--hide {
-    height:  0;
-    overflow: hidden;
-    transition: height .25s;
-}
-
 /* Post hover */
 /* .about-details-accordion:hover .about-details-accordion-item:hover .about-details-accordion-item-content {
     height:  6em;
 } */
 
+.about-details-accordion-item-content--hide {
+    height:  0px;
+    overflow: hidden;
+    transition: height .5s;
+}
+
 .about-details-accordion-item-content--show {
-    height:  6em;
+    transition: height .5s;
+    height:  9em;
 }

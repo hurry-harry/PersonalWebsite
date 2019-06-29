@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
 
   currJobTitle = 'Junior Developer';
   currCompany: {[key: string]: string} = {
-    name: 'YouSource Inc',
+    name: 'YouSource Inc.',
     link: 'https://www.you-source.com/'
   };
   currLocation: {[key: string]: string} = {
